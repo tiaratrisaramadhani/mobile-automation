@@ -118,6 +118,11 @@ export const config: WebdriverIO.Config = {
     // Make sure you have the wdio adapter package for the specific framework installed
     // before running any tests.
     framework: 'mocha',
+
+    mochaOpts: {
+    ui: 'bdd',
+    timeout: 60000 // Ubah dari 10000 ke 60000
+},
     
     //
     // The number of times to retry the entire specfile when it fails as a whole

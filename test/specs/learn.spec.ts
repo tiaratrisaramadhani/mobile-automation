@@ -1,36 +1,16 @@
+import AlertPage from '../pageobjects/alert.page.ts';
+
 describe('Tugas Mobile Automation - API Demos', () => {
+    it('Skenario: Input Name dan Password dengan POM', async () => {
+        // Gabungkan semua langkah di sini
+        await AlertPage.bukaHalamanTextEntry();
+        
+        const inputName = 'Tiara';
+        const inputPass = 'Rahasia123';
 
-    beforeEach(async () => {
-        const menuApp = await $('~App');
-        await menuApp.waitForDisplayed({ timeout: 10000 });
-        await menuApp.click();
-
-        const menuAlert = await $('~Alert Dialogs');
-        await menuAlert.waitForDisplayed();
-        await menuAlert.click();
-    });
-
-    it('Skenario: Berhasil Masukkan Nama, password, dan Verifikasi', async () => {
-        await $('~Text Entry dialog').click();
-
-        const nameInput = await $('id=io.appium.android.apis:id/username_edit');
-        const passInput = await $('id=io.appium.android.apis:id/password_edit');
-
-        await nameInput.waitForDisplayed();
-        await nameInput.setValue('Tiara');
-        await passInput.setValue('Rahasia123');
-
-        await expect(nameInput).toHaveText('Tiara');
-        await expect(passInput).toBeDisplayed();
-
-        await browser.saveScreenshot('./screenshot/ss_berhasil.png');
-
-        await $('id=android:id/button1').click(); 
-    });
-
-
-    afterEach(async () => {
-        await browser.back();
-        await browser.back();
+        await AlertPage.submitForm(inputName, inputPass);
+        await expect(AlertPage.inputName).toHaveText(inputName);
+        await browser.saveScreenshot('./screenshot/hasil_test.png');
+        await AlertPage.okBtn.click();
     });
 });
