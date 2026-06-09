@@ -1,10 +1,10 @@
-# 📱 Mobile Automation Testing Framework
+# Mobile Automation Testing Framework
 
 This project is a Mobile Automation Testing framework using Appium and WebdriverIO with TypeScript.
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - Appium  
 - WebdriverIO  
@@ -16,7 +16,7 @@ This project is a Mobile Automation Testing framework using Appium and Webdriver
 
 ---
 
-## ✨ Features
+## Features
 
 - Mobile automation testing using Appium
 - WebdriverIO framework with TypeScript
@@ -27,7 +27,7 @@ This project is a Mobile Automation Testing framework using Appium and Webdriver
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 mobile-automation/
@@ -44,7 +44,7 @@ mobile-automation/
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before running this project, ensure you have installed:
 
@@ -56,7 +56,7 @@ Before running this project, ensure you have installed:
 
 ---
 
-## 🚀 How to Run 
+## How to Run 
 
 Install dependencies:
 
@@ -78,7 +78,7 @@ npm run test
 
 ---
 
-## 🧪 Test Coverage
+## Test Coverage
 
 - App Navigation Testing
 - UI Element Interaction
@@ -89,7 +89,7 @@ npm run test
 
 ---
 
-## 📊 Reporting
+## Reporting
 
 Generate and open Allure Report:
 
@@ -99,7 +99,7 @@ npx allure serve allure-results
 ```
 ---
 
-## 🎯 Purpose
+## Purpose
 
 This project demonstrates QA Automation skills including:
 
@@ -113,7 +113,7 @@ The objective of this project is to improve application quality through automate
 
 ---
 
-## 📱 Application Under Test
+## Application Under Test
 
 - ApiDemos-debug.apk (Android sample application)
 
